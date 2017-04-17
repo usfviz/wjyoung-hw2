@@ -81,9 +81,7 @@ reshape_df <- function(df, value) {
   return (df)
 }
 
-
-runApp(
-  list(
+list(
     ui = bootstrapPage(
       ggvisOutput("p"),
       uiOutput("p_ui")
@@ -91,8 +89,8 @@ runApp(
     server = function(..., session) {
       plot_data(load_data())
     }
-  )
 )
+
 
 
 
