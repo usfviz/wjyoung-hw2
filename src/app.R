@@ -6,8 +6,6 @@ library(ggvis)
 library(reshape2)
 library(shiny)
 
-setwd("~/msan/vis/hw2/")
-
 
 load_data <- function() {
   fert_df <- read_data("API_SP/API_SP.DYN.TFRT.IN_DS2_en_csv_v2.csv", 4)
