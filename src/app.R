@@ -8,10 +8,10 @@ library(shiny)
 
 
 load_data <- function() {
-  fert_df <- read_data("API_SP/API_SP.DYN.TFRT.IN_DS2_en_csv_v2.csv", 4)
-  le_df <- read_data("API_SP-2/API_SP.DYN.LE00.IN_DS2_en_csv_v2.csv", 4)
-  pop_df <- read_data("API_SP.POP.TOTL_DS2_en_csv_v2.csv")
-  cont_df <- read.csv("continents.csv", stringsAsFactors = FALSE)
+  fert_df <- read_data("../API_SP/API_SP.DYN.TFRT.IN_DS2_en_csv_v2.csv", 4)
+  le_df <- read_data("../API_SP-2/API_SP.DYN.LE00.IN_DS2_en_csv_v2.csv", 4)
+  pop_df <- read_data("../API_SP.POP.TOTL_DS2_en_csv_v2.csv")
+  cont_df <- read.csv("../continents.csv", stringsAsFactors = FALSE)
   
   fert_df <- reshape_df(fert_df, "Fertility.Rate")
   le_df <- reshape_df(le_df, "Life.Expectancy")
